@@ -43,11 +43,11 @@ $(document).ready(function(){
             items: 1,
             nav: false,
 			navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-            dots: true,
-            autoplay: true,
-            loop: true,
-            mouseDrag: true,
-            touchDrag: true,
+            dots: false,
+            autoplay: false,
+            loop: false,
+            mouseDrag: false,
+            touchDrag: false,
         });
         
         $(".all-slide").on("translate.owl.carousel", function(){
