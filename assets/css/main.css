@@ -2300,7 +2300,7 @@ input:focus {
 16.Page Heading Section
 ==========================*/
 .pagehding-sec {
-	background-image: url("../assets/img/aboutbg01.jpg");
+	background-color: #0B1B4F;
 	background-position: center center;
 	background-repeat: no-repeat;
 	padding: 50px 0;
