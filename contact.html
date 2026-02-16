@@ -150,110 +150,267 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8">
-					<div class="contact-field">
-						<h2>Write Your Message</h2>
+					<div class="contact-field modern-contact">
 
-						<!-- IMPORTANT: Added form with correct ID -->
-						<form id="contact-form">
+						<h2 class="contact-title">Contact Us – Let's Make a Difference Together</h2>
+
+						<p class="contact-subtext">
+							Brentwood Logistics & Security Company, S.A. operates throughout the Republic of Panamá,
+							providing compliance-driven protective services for financial institutions and regulated
+							environments.
+							For inquiries regarding Bank Protection Officers, Business Compliance Audits, or our Quality
+							Report System (QRS),
+							please send us a message below.
+						</p>
+
+						<form id="contact-form" class="premium-form">
 							<div class="row">
 
-								<div class="col-lg-6 col-sm-6 col-xs-12">
-									<div class="single-input-field">
-										<input id="username" name="username" placeholder="First Name" type="text"
-											required>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<input type="text" name="username" placeholder="First Name" required>
 									</div>
 								</div>
 
-								<div class="col-lg-6 col-sm-6 col-xs-12">
-									<div class="single-input-field">
-										<input id="phone" name="phone" placeholder="Phone" type="text" required>
-									</div>
-								</div>
-
-								<div class="col-lg-12 col-sm-12 col-xs-12">
-									<div class="single-input-field">
-										<input id="email" name="email" placeholder="Your E-mail" type="email" required>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<input type="text" name="phone" placeholder="Phone Number" required>
 									</div>
 								</div>
 
 								<div class="col-lg-12">
-									<div class="single-input-field">
-										<textarea id="message" name="message" placeholder="Message" required></textarea>
+									<div class="form-group">
+										<input type="email" name="email" placeholder="Email Address" required>
 									</div>
 								</div>
 
-								<div class="single-input-fieldsbtn">
-									<button type="submit" class="contact-btn">Send Now</button>
+								<div class="col-lg-12">
+									<div class="form-group">
+										<textarea name="message" placeholder="How can we assist you?"
+											required></textarea>
+									</div>
 								</div>
 
+								<div class="col-lg-12">
+									<button type="submit" class="premium-btn">Send Message</button>
+								</div>
 
 							</div>
 						</form>
-						<style>
-							.contact-btn {
-								background: linear-gradient(135deg, #0B1B4F, #1f3c88);
-								color: #fff;
-								padding: 12px 35px;
-								border: none;
-								border-radius: 30px;
-								font-size: 15px;
-								font-weight: 600;
-								letter-spacing: 1px;
-								text-transform: uppercase;
-								cursor: pointer;
-								transition: all 0.3s ease-in-out;
-								box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-							}
-
-							.contact-btn:hover {
-								background: linear-gradient(135deg, #1f3c88, #0B1B4F);
-								transform: translateY(-3px);
-								box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
-							}
-
-							.contact-btn:active {
-								transform: scale(0.98);
-							}
-						</style>
-						<!-- End Form -->
 
 					</div>
 				</div>
 
 				<div class="col-lg-4">
-					<div class="contact-info">
-						<div class="contact-info-item">
-							<div class="contact-info-text">
-								<h2>phone</h2>
-								<span>+91 84468 74534</span>
-								<span></span>
-							</div>
+
+					<div class="contact-info modern-info">
+						<h3>Contact Information</h3>
+
+						<div class="info-item">
+							<p class="info-label">Office</p>
+							<p class="info-value">(507) 232-5032</p>
+						</div>
+
+						<div class="info-item">
+							<p class="info-label">Mobile</p>
+							<p class="info-value">(507) 637-91436</p>
+						</div>
+
+						<div class="info-item">
+							<p class="info-label">Fax</p>
+							<p class="info-value">1 (888) 271-4575</p>
+						</div>
+
+						<div class="info-item">
+							<p class="info-label">Email</p>
+							<p class="info-value">controlpty@brentwoodlsc.com</p>
+						</div>
+
+						<div class="info-item">
+							<p class="info-label">Address</p>
+							<p class="info-value">
+								Avenida Marginal Este<br>
+								Albrook, Ciudad de Panamá<br>
+								República de Panamá
+							</p>
 						</div>
 					</div>
-					<div class="contact-info">
-						<div class="contact-info-item">
-							<div class="contact-info-text">
-								<h2>e-mail</h2>
-								<span>business@fundsweb.in</span>
-								<span></span>
-							</div>
-						</div>
-					</div>
-					<div class="contact-info">
-						<div class="contact-info-item">
-							<div class="contact-info-text">
-								<h2>address</h2>
-								<span>Nucleus Mall, FUNDSROOM HQ, 804, Sadhu Vaswani Rd, Pune,
-									Maharashtra 411001</span>
-								<span></span>
-							</div>
-						</div>
-					</div>
+
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- Contact Page Section End -->
+
+
+	<!-- Full Width Map Section -->
+	<div class="fullwidth-map">
+		<iframe
+			src="https://www.google.com/maps?q=Avenida%20Marginal%20Este%20Zona%20de%20Exportacion%20de%20Albrook%20Ciudad%20de%20Panama&output=embed"
+			allowfullscreen="" loading="lazy">
+		</iframe>
+	</div>
+
+
+	<style>
+		/* Modern Contact Styling */
+		.modern-contact {
+			background: #ffffff;
+			padding: 50px;
+			border-radius: 16px;
+			box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+		}
+
+		.contact-title {
+			font-weight: 700;
+			font-size: 32px;
+			margin-bottom: 15px;
+			color: #0B1B4F;
+		}
+
+		.contact-subtext {
+			color: #555;
+			margin-bottom: 35px;
+			line-height: 1.7;
+			font-size: 15px;
+		}
+
+		/* Form Styling */
+		.premium-form .form-group {
+			margin-bottom: 20px;
+		}
+
+		.premium-form input,
+		.premium-form textarea {
+			width: 100%;
+			padding: 16px 20px;
+			border: 2px solid #e5e7eb;
+			border-radius: 10px;
+			font-size: 15px;
+			transition: all 0.3s ease;
+			background: #ffffff;
+			font-family: inherit;
+		}
+
+		.premium-form input:focus,
+		.premium-form textarea:focus {
+			border-color: #0B1B4F;
+			background: #fff;
+			box-shadow: 0 0 0 4px rgba(11, 27, 79, 0.1);
+			outline: none;
+		}
+
+		.premium-form textarea {
+			min-height: 150px;
+			resize: vertical;
+		}
+
+		/* Premium Button */
+		.premium-btn {
+			background: #0B1B4F;
+			color: #fff;
+			padding: 16px 40px;
+			border: none;
+			border-radius: 10px;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 1.2px;
+			transition: all 0.3s ease;
+			cursor: pointer;
+			width: 100%;
+			font-size: 15px;
+		}
+
+		.premium-btn:hover {
+			background: #1e40af;
+			transform: translateY(-2px);
+			box-shadow: 0 15px 35px rgba(11, 27, 79, 0.3);
+		}
+
+		/* Contact Info */
+		.modern-info {
+			background: #0B1B4F;
+			color: #fff;
+			padding: 50px 40px;
+			border-radius: 16px;
+			box-shadow: 0 20px 60px rgba(11, 27, 79, 0.25);
+			height: 96%;
+		}
+
+		.row {
+			display: flex;
+			align-items: stretch;
+		}
+
+		.modern-info h3 {
+			margin-bottom: 35px;
+			font-weight: 600;
+			font-size: 26px;
+			color: #ffffff;
+		}
+
+		.info-item {
+			margin-bottom: 28px;
+			padding-bottom: 28px;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+		}
+
+		.info-item:last-child {
+			margin-bottom: 0;
+			padding-bottom: 0;
+			border-bottom: none;
+		}
+
+		.info-label {
+			font-size: 11px;
+			text-transform: uppercase;
+			letter-spacing: 1.5px;
+			color: rgba(255, 255, 255, 0.6);
+			margin-bottom: 8px;
+			font-weight: 600;
+		}
+
+		.info-value {
+			font-size: 16px;
+			color: #ffffff;
+			margin: 0;
+			line-height: 1.6;
+			font-weight: 400;
+		}
+
+		.modern-info hr {
+			display: none;
+		}
+
+		/* Full Width Map */
+		.fullwidth-map {
+			width: 100%;
+			height: 500px;
+			margin-top: 60px;
+		}
+
+		.fullwidth-map iframe {
+			width: 100%;
+			height: 100%;
+			border: 0;
+			display: block;
+			border-radius: 16px;
+			box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+		}
+
+		/* Responsive */
+		@media (max-width: 991px) {
+
+			.modern-contact,
+			.modern-info {
+				padding: 35px 25px;
+			}
+
+			.modern-info {
+				margin-top: 30px;
+			}
+		}
+	</style>
 
 	<!-- Footer Section Start -->
 	<footer>
