@@ -11,7 +11,7 @@
 	<meta name="author" content="ThemeEarth">
 	<meta name="description" content="">
 	<!-- Title -->
-	<title>--</title>
+	<title id="title">--</title>
 	<!-- Favicon Icon -->
 	<link rel="icon" type="image/png" href="assets/assets/img/.png">
 
@@ -68,23 +68,13 @@
 						<div class="col-lg-8 col-sm-8">
 							<div class="hd-lft">
 								<ul>
-									<li><i class="fa fa-comment-o"></i> 24x7 live Support</li>
-									<li><i class="fa fa-phone"></i> +91 84468 74534</li>
+									<li><i class="fa fa-comment-o"></i>controlpty@brentwoodlsc.com</li>
+									<li><i class="fa fa-phone"></i>(507) 637-91436 </li>
 
 								</ul>
 							</div>
 						</div>
-						<div class="col-lg-4 col-sm-4">
-							<div class="hd-rgt">
 
-								<ul>
-									<li><a href=""><i class="fa fa-facebook"></i></a></li>
-									<li><a href=""><i class="fa fa-twitter"></i></a></li>
-									<li><a href=""><i class="fa fa-youtube"></i></a></li>
-									<li><a href=""><i class="fa fa-google-plus"></i></a></li>
-								</ul>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -92,12 +82,12 @@
 			<div class="mnmenu-sec">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-3 col-md-4 col-sm-4 col-5">
+						<div class="col-lg-2 col-md-4 col-sm-4 col-5">
 							<div class="logo">
-								<a href="##"><img src="assets/img/Fundsweb1.png" alt="image"></a>
+								<a href="index.html"><img src="assets/img/logo_oscuro.png" alt="image"></a>
 							</div>
 						</div>
-						<div class="col-lg-9 col-md-8 col-sm-8 col-7">
+						<div class="col-lg-10 col-md-8 col-sm-8 col-7">
 							<div class="menu">
 								<nav id="main-menu" class="main-menu">
 									<ul>
@@ -111,8 +101,8 @@
 											</ul>
 										</li>
 
-										<li><a href="employees.html">CAREERS</a></li>
-										<li><a href="blog-classic.html">BLOG</a></li>
+										<li><a href="careers.html">CAREERS</a></li>
+										<li><a href="blog-classic.html">QUALITY REPORT CONTROL SYSTEM</a></li>
 										<li><a href="contact.html">CONTACT US</a></li>
 									</ul>
 								</nav>
@@ -132,22 +122,107 @@
 		<div class="all-slide owl-carousel">
 
 			<!-- Single Slide -->
-			<div class="single-slide" style="background-image:url(assets/img/home01.jpg);">
-				<div class="slider-overlay"></div>
-				<div class="slider-text">
-					<div class="slider-wraper">
-						<h1>Your Safety Is Our <span>Priority</span></h1>
-						<p>
-							Professional & Trusted Security Guard Services for Homes, Offices, Banks & Commercial
-							Spaces.
-						</p>
-						<ul>
-							<li><a href="about.html">Read More</a></li>
-							<li><a href="contact.html">Contact Us</a></li>
-						</ul>
-					</div>
-				</div>
+			<div class="single-slide">
+				<!-- Video Background -->
+				<video class="slide-video" id="background-video" autoplay muted loop playsinline>
+					<source src="assets/img/brentwood-intro720.mp4" type="video/mp4">
+					<!-- Fallback image if video doesn't load -->
+					<div class="video-fallback" style="background-image:url(assets/img/home01.jpg);"></div>
+				</video>
+
+				<!-- Light Blue Overlay -->
+				<div class="slider-overlay" style="background-color: rgba(123, 156, 231, 0.7);"></div>
+
+				<!-- Commented out text content -->
 			</div>
+
+			<style>
+				.single-slide {
+					position: relative;
+					width: 100%;
+					height: 100vh;
+					overflow: hidden;
+				}
+
+				.slide-video {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					min-width: 100%;
+					min-height: 100%;
+					width: auto;
+					height: auto;
+					transform: translateX(-50%) translateY(-50%);
+					object-fit: cover;
+					z-index: 0;
+				}
+
+				.slider-overlay {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					z-index: 1;
+					background-color: rgba(173, 216, 230, 0.7);
+				}
+
+				.slider-text {
+					position: relative;
+					z-index: 2;
+				}
+
+				.video-fallback {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background-size: cover;
+					background-position: center;
+				}
+			</style>
+
+			<script>
+				// Force video to play properly
+				document.addEventListener('DOMContentLoaded', function () {
+					var video = document.getElementById('background-video');
+
+					if (video) {
+						// Ensure video loads properly
+						video.load();
+
+						// Play video when ready
+						video.play().catch(function (error) {
+							console.log("Video autoplay failed:", error);
+						});
+
+						// Check if video is playing correctly
+						video.addEventListener('loadedmetadata', function () {
+							console.log('Video duration:', video.duration, 'seconds');
+						});
+
+						// Monitor if video gets stuck
+						video.addEventListener('timeupdate', function () {
+							// If video stops progressing, reload and play
+							if (video.currentTime === video.duration) {
+								video.currentTime = 0;
+								video.play();
+							}
+						});
+
+						// Handle video errors
+						video.addEventListener('error', function (e) {
+							console.log('Video error:', e);
+							// Try reloading
+							setTimeout(function () {
+								video.load();
+								video.play();
+							}, 1000);
+						});
+					}
+				});
+			</script>
 
 		</div>
 	</div>
@@ -160,16 +235,16 @@
 				<div class="col-lg-7">
 					<div class="about-desc">
 						<div class="sec-title">
-							<h1><span>About </span>Our Company</h1>
-							<p>We are a professionally managed security services company committed to providing
-								reliable, disciplined, and trained security personnel across residential, commercial,
-								and industrial sectors. </p>
-							<p>With years of experience in the security industry, we understand that safety is not
-								optional — it is essential. Our guards are thoroughly verified, trained in emergency
-								handling, and equipped to maintain a secure and peaceful environment for our clients.
+							<h1 style="margin-bottom: 40px;">ADD <span>PRESTIGE</span> AND <span>VALUE</span>
+								WHILE DETERING RISKS</h1>
+							<p style="font-size: 20px; margin-bottom: 20px;">WHIT BRENTWOOD'S BANK PROTECTION OFFICERS
+							</p>
+							<p style="font-size: 16px;">At Brentwood we train and motivate our guards to perform to the
+								best of their abilities
+								our process enhances both security compliance and customer support work ethics.
 							</p>
 						</div>
-						<div class="about-countup">
+						<!-- <div class="about-countup">
 							<div class="counting-inner">
 								<div class="countup-text">
 									<h2 class="counter">250</h2>
@@ -188,7 +263,7 @@
 									<h4>Our employees</h4>
 								</div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 				<div class="col-lg-5">
@@ -278,7 +353,7 @@
 			<div class="row">
 				<div class="col-lg-12 col-lg-12 col-sm-12 col-xs-12">
 					<div class="sec-title">
-						<h1>What We <span>Offer</span> Here</h1>
+						<h1>What We <span>Offer</span></h1>
 						<p>We believe in integrity, vigilance, and responsibility. Our mission is to deliver dependable
 							security solutions tailored to your specific needs while maintaining the highest
 							professional standards.</p>
@@ -412,7 +487,7 @@
 			<div class="row">
 				<div class="col-lg-12 col-lg-12 col-sm-12 col-xs-12">
 					<div class="sec-title">
-						<h1><span>Our Gallery </span>Photo</h1>
+						<h1><span>Our </span>Gallery</h1>
 						<!-- <p>Lorem ipsum dolor sit amet, pellentesque enim lorem quis vivamus amet.</p> -->
 					</div>
 				</div>
@@ -747,15 +822,14 @@
 				<div class="row">
 					<div class="col-lg-5 col-md-6">
 						<div class="footer-wedget-one">
-							<a href="##"><img src="assets/img/Fundsweb1.png" alt="image"></a>
-							<p>We are a trusted security services company providing trained, verified, and professional
-								security guards for homes, offices, banks, and commercial spaces.</p>
+							<a href="##"><img src="assets/img/logo_claro.png" alt="image"></a>
+							<p>BRENTWOOD SECURITY AND LOGISTICS COMPANY</p>
 							<div class="footer-social-profile">
 								<ul>
-									<li><a href="##"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="##"><i class="fa fa-youtube"></i></a></li>
-									<li><a href="##"><i class="fa fa-linkedin"></i></a></li>
-									<li><a href="##"><i class="fa fa-whatsapp"></i></a></li>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
 
 								</ul>
 							</div>
@@ -783,16 +857,16 @@
 							<div class="inner-box">
 								<div class="inner-item">
 									<span class="icon"><i class="fa fa-map-marker"></i></span>
-									<span class="inner-text">Nucleus Mall, FUNDSROOM HQ, 804, Sadhu Vaswani Rd, Pune,
-										Maharashtra 411001</span>
+									<span class="inner-text">Avenida Marginal Este | Zona de Exportación de Albrook,
+										detras de Novey. | Ciudad de Panamá, República de Panamá</span>
 								</div>
 								<div class="inner-item">
 									<span class="icon"><i class="fa fa-envelope-o"></i></span>
-									<span class="inner-text">business@fundsweb.in</span>
+									<span class="inner-text">controlpty@brentwoodlsc.com</span>
 								</div>
 								<div class="inner-item">
 									<span class="icon"><i class="fa fa-phone"></i></span>
-									<span class="inner-text"> +91 84468 74534</span>
+									<span class="inner-text"> (507) 637-91436</span>
 								</div>
 							</div>
 						</div>
@@ -1028,9 +1102,6 @@
 			});
 		}
 	</script>
-
-
-
 
 </body>
 
