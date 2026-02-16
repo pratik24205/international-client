@@ -11,7 +11,7 @@
 	<meta name="author" content="ThemeEarth">
 	<meta name="description" content="">
 	<!-- Title -->
-	<title>--</title>
+	<title id="title">--</title>
 	<!-- Favicon Icon -->
 	<link rel="icon" type="image/png" href="assets/assets/img/.png">
 
@@ -125,10 +125,10 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="page-heading">
-						<h1>Blog Classic</h1>
+						<h1>QUALITY REPORT CONTROL SYSTEM</h1>
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="">Blog Classic</a></li>
+							<li><a href="">Quality Report Control System</a></li>
 						</ul>
 					</div>
 				</div>
@@ -137,142 +137,590 @@
 	</div>
 	<!-- Page Heading Section End -->
 	<!-- Blog Section Start -->
-	<div class="blog-classic-sec pt-100 pb-70">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8">
-					<div class="media">
-						<div class="single-post">
-							<div class="blog-classic-img">
-								<img src="assets/img/blog01.jpg" alt="image">
-								<div class="blog-classic-overlay">
-									<ul>
-										<li><a href="blog-details.html"><i class="fa fa-unlink"></i></a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="media-body">
-								<div class="single-post-text">
-									<h2><a href="##">10 Essential Safety Tips for Night Shift Security
-											Guards</a></h2>
-									<div class="post-info">
+	<div class="widget evaluation-widget" style="margin-top: 40px;">
+		<style>
+			/* Evaluation Form Styles */
+			.evaluation-widget {
+				background: linear-gradient(145deg, #ffffff 0%, #f8f9ff 100%);
+				border-radius: 30px;
+				padding: 25px 20px;
+				box-shadow: 0 20px 40px -12px rgba(0, 32, 64, 0.25);
+				border: 1px solid rgba(33, 107, 165, 0.15);
+				margin-bottom: 30px;
+			}
 
-									</div>
-									<p>Night shift security requires heightened awareness, discipline, and strategic
-										patrol planning. Security officers must remain alert at all times, conduct
-										routine patrols at scheduled intervals, monitor surveillance systems
-										continuously, and ensure all access points are secured. Proper communication
-										with supervisors and maintaining detailed incident reports are critical during
-										night operations. Guards should avoid predictable patrol patterns, stay in
-										well-lit areas when possible, and immediately report suspicious activity.
-										Physical fitness, mental focus, and adherence to established security protocols
-										ensure effective protection of people, property, and assets during overnight
-										hours.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="media">
-						<div class="single-post">
-							<div class="blog-classic-img">
-								<img src="assets/img/blog02.jpg" alt="image">
-								<div class="blog-classic-overlay">
-									<ul>
-										<li><a href="blog-details.html"><i class="fa fa-unlink"></i></a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="media-body">
-								<div class="single-post-text">
-									<h2><a href="blog-details.html">How Security Guards Can Handle Emergencies Like a
-											Pro</a></h2>
-									<div class="post-info">
+			.evaluation-header {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin-bottom: 20px;
+				border-bottom: 2px dashed #2f5c8a;
+				padding-bottom: 15px;
+			}
 
-									</div>
-									<p>Professional security officers are trained to respond calmly and efficiently
-										during emergencies. Whether facing fire incidents, medical situations, security
-										breaches, or unauthorized intrusions, guards must assess the situation quickly,
-										follow established emergency response procedures, and coordinate with local
-										authorities when required. Clear communication, crowd control, and safeguarding
-										occupants are top priorities. Proper training in evacuation protocols, first aid
-										basics, and crisis management allows security personnel to minimize risk and
-										maintain order under pressure. A well-prepared guard acts decisively while
-										ensuring safety remains the primary objective. </p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="media">
-						<div class="single-post">
-							<div class="blog-classic-img">
-								<img src="assets/img/blog03.jpg" alt="image">
-								<div class="blog-classic-overlay">
-									<ul>
-										<li><a href="blog-details.html"><i class="fa fa-unlink"></i></a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="media-body">
-								<div class="single-post-text">
-									<h2><a href="blog-details.html">Daily Checklist Every Security Guard Should
-											Follow</a></h2>
-									<div class="post-info">
+			.evaluation-header h3 {
+				font-size: 1.3rem;
+				font-weight: 700;
+				color: #0a2c3d;
+				margin: 0;
+				line-height: 1.3;
+			}
 
-									</div>
-									<p>A disciplined daily routine ensures consistent security performance. Security
-										officers should begin each shift with a briefing, review of assigned
-										responsibilities, and inspection of equipment such as communication devices and
-										monitoring systems. Guards must verify entry and exit points, check
-										identification credentials, monitor CCTV feeds, and maintain accurate visitor
-										logs. Regular patrol documentation, incident reporting, and communication with
-										supervisors are essential parts of daily operations. Following a structured
-										checklist promotes accountability, enhances security standards, and ensures
-										reliable protection throughout every shift. </p>
-								</div>
-							</div>
-						</div>
+			.quality-badge-sm {
+				background: #164863;
+				padding: 0.3rem 1rem;
+				border-radius: 40px;
+				color: white;
+				font-weight: 600;
+				font-size: 1.2rem;
+				border: 2px solid #9ac7ff;
+			}
+
+			.visit-details {
+				background: #eef4fa;
+				border-radius: 20px;
+				padding: 15px;
+				margin-bottom: 20px;
+			}
+
+			/* Two column layout for desktop, three column for form fields */
+			.visit-row {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				gap: 12px;
+			}
+
+			.field-group {
+				margin-bottom: 0;
+				display: flex;
+				flex-direction: column;
+				gap: 4px;
+			}
+
+			.field-group label {
+				font-weight: 600;
+				color: #10364b;
+				font-size: 0.85rem;
+			}
+
+			.field-group input,
+			.field-group select {
+				background: white;
+				border: 1px solid #bcd3e6;
+				border-radius: 30px;
+				padding: 0.5rem 1rem;
+				font-size: 0.9rem;
+				outline: none;
+				width: 100%;
+				cursor: pointer;
+			}
+
+			.field-group input:focus {
+				border-color: #1f679b;
+				box-shadow: 0 0 0 3px rgba(31, 103, 155, 0.1);
+			}
+
+			/* Mobile styles for visit details */
+			@media (max-width: 768px) {
+				.visit-row {
+					grid-template-columns: 1fr;
+					gap: 15px;
+				}
+			}
+
+			.rating-section {
+				background: rgba(255, 255, 255, 0.7);
+				border-radius: 20px;
+				padding: 15px;
+				margin-bottom: 15px;
+				border: 1px solid #e0ecf9;
+			}
+
+			.rating-section h4 {
+				font-size: 1.1rem;
+				font-weight: 600;
+				color: #0b3346;
+				margin-bottom: 15px;
+				border-left: 4px solid #3d8fcc;
+				padding-left: 10px;
+			}
+
+			/* Rating items grid - 2 columns on desktop */
+			.rating-grid {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 15px;
+			}
+
+			/* Mobile: single column */
+			@media (max-width: 768px) {
+				.rating-grid {
+					grid-template-columns: 1fr;
+				}
+			}
+
+			.rating-item {
+				margin-bottom: 0;
+			}
+
+			.rating-item label {
+				font-weight: 600;
+				color: #1e3b4f;
+				font-size: 0.9rem;
+				display: block;
+				margin-bottom: 5px;
+			}
+
+			.options {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 12px;
+				background: #f3f9ff;
+				padding: 12px 15px;
+				border-radius: 30px;
+				border: 1px solid #c5dff0;
+			}
+
+			.options label {
+				display: inline-flex;
+				align-items: center;
+				gap: 5px;
+				font-weight: 500;
+				color: #113a50;
+				cursor: pointer;
+				font-size: 0.85rem;
+				margin: 0;
+				padding: 2px 0;
+			}
+
+			input[type="radio"] {
+				accent-color: #1d6f9e;
+				width: 16px;
+				height: 16px;
+				margin-right: 4px;
+				cursor: pointer;
+			}
+
+			.meets-needs {
+				margin: 15px 0;
+				padding: 15px;
+				background: #f0f7fe;
+				border-radius: 20px;
+			}
+
+			.radio-group {
+				display: flex;
+				gap: 20px;
+				margin: 10px 0;
+			}
+
+			.radio-group label {
+				display: flex;
+				align-items: center;
+				gap: 5px;
+				font-weight: 500;
+			}
+
+			.why-textarea {
+				width: 100%;
+				border-radius: 20px;
+				border: 2px solid #cbdae9;
+				padding: 12px 15px;
+				font-size: 0.9rem;
+				background: white;
+				resize: vertical;
+				min-height: 80px;
+				margin-top: 10px;
+			}
+
+			.nav-buttons {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin-top: 20px;
+				gap: 10px;
+				flex-wrap: wrap;
+			}
+
+			.nav-group {
+				display: flex;
+				gap: 8px;
+			}
+
+			.eval-btn {
+				background: white;
+				border: 1.5px solid #5b65f2;
+				color: #5b65f2;
+				padding: 0.5rem 1.2rem;
+				border-radius: 40px;
+				font-weight: 600;
+				font-size: 0.9rem;
+				cursor: pointer;
+				transition: all 0.2s;
+				display: inline-flex;
+				align-items: center;
+				gap: 5px;
+			}
+
+			.eval-btn:hover {
+				background: #e7f0ff;
+				border-color: #5b65f2;
+				transform: translateY(-2px);
+			}
+
+			.eval-btn.primary {
+				background: linear-gradient(110deg, #5b65f2, #5b65f2);
+				border-color: #5b65f2;
+				color: white;
+			}
+
+			.eval-btn.primary:hover {
+				background: linear-gradient(110deg, #5b65f2, #5b65f2);
+			}
+
+			.progress-badge {
+				background: #bbcfe0;
+				padding: 0.3rem 1rem;
+				border-radius: 40px;
+				font-weight: 600;
+				color: #001e30;
+				font-size: 0.8rem;
+			}
+
+			hr {
+				margin: 20px 0;
+				border: 1px solid rgba(60, 110, 150, 0.2);
+			}
+
+			/* Flatpickr custom styling */
+			.flatpickr-calendar {
+				border-radius: 15px !important;
+				box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+			}
+
+			.flatpickr-day.selected {
+				background: #1f679b !important;
+				border-color: #1f679b !important;
+			}
+
+			.flatpickr-time input:hover,
+			.flatpickr-time input:focus {
+				background: #e7f0ff !important;
+			}
+		</style>
+
+		<div class="evaluation-header">
+			<h3>QUALITY REPORT CONTROL SYSTEM</h3>
+		</div>
+
+		<!-- Visit Details - Three columns on desktop -->
+		<div class="visit-details">
+			<div class="visit-row">
+				<div class="field-group">
+					<label><i class="fa fa-calendar"></i> Date of visit:</label>
+					<input type="text" id="visitDate" placeholder="Select date" readonly>
+				</div>
+
+				<div class="field-group">
+					<label><i class="fa fa-clock-o"></i> Time:</label>
+					<input type="text" id="visitTime" placeholder="Select time" readonly>
+				</div>
+
+				<div class="field-group">
+					<label><i class="fa fa-user"></i> Evaluated by:</label>
+					<input type="text" id="evaluatedBy" placeholder="Write Here" value="">
+				</div>
+			</div>
+		</div>
+
+		<!-- Agent Performance -->
+		<div class="rating-section">
+			<h4>AGENT PERFORMANCE</h4>
+
+			<div class="rating-grid">
+				<div class="rating-item">
+					<label>Customer Support *</label>
+					<div class="options">
+						<label><input type="radio" name="customerSupport" value="Very good"> Very good</label>
+						<label><input type="radio" name="customerSupport" value="Good"> Good</label>
+						<label><input type="radio" name="customerSupport" value="Regular"> Regular</label>
+						<label><input type="radio" name="customerSupport" value="Deficient"> Deficient</label>
 					</div>
 				</div>
-				<div class="col-lg-4 col-lg-4 col-sm-12 col-xs-12">
-					<div class="sidebar">
-						<!-- <div class="widget search-field">
-							<form action="#">
-								<input placeholder="search ...." type="text">
-								<button type="submit"><i class="fa fa-search"></i></button>
-							</form>
-						</div> -->
-						<div class="widget widget-archive">
-							<h1>news categorise</h1>
-							<ul>
-								<li><a href="##">Office Security<span></span></a></li>
-								<li><a href="##">CCTV Security<span></span></a></li>
-								<li><a href="##">House Security<span></span></a></li>
-								<li><a href="##">Bank Security <span></span></a></li>
-								<li><a href="##">Parking Security <span></span></a></li>
-								<li><a href="##">Man Security <span></span></a></li>
-							</ul>
-						</div>
 
+				<div class="rating-item">
+					<label>Procedural knowledge *</label>
+					<div class="options">
+						<label><input type="radio" name="procKnowledge" value="Very good"> Very good</label>
+						<label><input type="radio" name="procKnowledge" value="Good"> Good</label>
+						<label><input type="radio" name="procKnowledge" value="Regular"> Regular</label>
+						<label><input type="radio" name="procKnowledge" value="Deficient"> Deficient</label>
+					</div>
+				</div>
 
-						<div class="widget widget-tag">
-							<h1>keyword</h1>
-							<ul>
-								<li><a href="##">Office </a></li>
-								<li><a href="##">CCTV</a></li>
-								<li><a href="##">Management</a></li>
-								<li><a href="##">Service</a></li>
-								<li><a href="##">Security</a></li>
-								<li><a href="##">Bank</a></li>
-								<li><a href="##">Planing</a></li>
-								<li><a href="##">House</a></li>
-								<li><a href="##">Parking</a></li>
-							</ul>
-						</div>
+				<div class="rating-item">
+					<label>Responsibility *</label>
+					<div class="options">
+						<label><input type="radio" name="responsibility" value="Very good"> Very good</label>
+						<label><input type="radio" name="responsibility" value="Good"> Good</label>
+						<label><input type="radio" name="responsibility" value="Regular"> Regular</label>
+						<label><input type="radio" name="responsibility" value="Deficient"> Deficient</label>
+					</div>
+				</div>
+
+				<div class="rating-item">
+					<label>Punctuality *</label>
+					<div class="options">
+						<label><input type="radio" name="punctuality" value="Very good"> Very good</label>
+						<label><input type="radio" name="punctuality" value="Good"> Good</label>
+						<label><input type="radio" name="punctuality" value="Regular"> Regular</label>
+						<label><input type="radio" name="punctuality" value="Deficient"> Deficient</label>
 					</div>
 				</div>
 			</div>
 		</div>
+
+		<!-- Service Aspects -->
+		<div class="rating-section">
+			<h4>SERVICE ASPECTS</h4>
+
+			<div class="rating-grid">
+				<div class="rating-item">
+					<label>Personnel disposition *</label>
+					<div class="options">
+						<label><input type="radio" name="personnelDisposition" value="Very good"> Very good</label>
+						<label><input type="radio" name="personnelDisposition" value="Good"> Good</label>
+						<label><input type="radio" name="personnelDisposition" value="Regular"> Regular</label>
+						<label><input type="radio" name="personnelDisposition" value="Deficient"> Deficient</label>
+					</div>
+				</div>
+
+				<div class="rating-item">
+					<label>Presence of the agent *</label>
+					<div class="options">
+						<label><input type="radio" name="agentPresence" value="Very good"> Very good</label>
+						<label><input type="radio" name="agentPresence" value="Good"> Good</label>
+						<label><input type="radio" name="agentPresence" value="Regular"> Regular</label>
+						<label><input type="radio" name="agentPresence" value="Deficient"> Deficient</label>
+					</div>
+				</div>
+
+				<div class="rating-item">
+					<label>Presence of the supervisor *</label>
+					<div class="options">
+						<label><input type="radio" name="supervisorPresence" value="Very good"> Very good</label>
+						<label><input type="radio" name="supervisorPresence" value="Good"> Good</label>
+						<label><input type="radio" name="supervisorPresence" value="Regular"> Regular</label>
+						<label><input type="radio" name="supervisorPresence" value="Deficient"> Deficient</label>
+					</div>
+				</div>
+
+				<div class="rating-item">
+					<label>Opening on time</label>
+					<div class="options">
+						<label><input type="radio" name="openingOnTime" value="Very good"> Very good</label>
+						<label><input type="radio" name="openingOnTime" value="Good"> Good</label>
+						<label><input type="radio" name="openingOnTime" value="Regular"> Regular</label>
+						<label><input type="radio" name="openingOnTime" value="Deficient"> Deficient</label>
+					</div>
+				</div>
+
+				<div class="rating-item">
+					<label>Team on time *</label>
+					<div class="options">
+						<label><input type="radio" name="teamOnTime" value="Very good"> Very good</label>
+						<label><input type="radio" name="teamOnTime" value="Good"> Good</label>
+						<label><input type="radio" name="teamOnTime" value="Regular"> Regular</label>
+						<label><input type="radio" name="teamOnTime" value="Deficient"> Deficient</label>
+					</div>
+				</div>
+
+				<div class="rating-item">
+					<label>Has complete security uniform *</label>
+					<div class="options">
+						<label><input type="radio" name="uniform" value="Very good"> Very good</label>
+						<label><input type="radio" name="uniform" value="Good"> Good</label>
+						<label><input type="radio" name="uniform" value="Regular"> Regular</label>
+						<label><input type="radio" name="uniform" value="Deficient"> Deficient</label>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Supervision -->
+		<div class="rating-section">
+			<h4>3. SUPERVISION *</h4>
+			<div class="options" style="justify-content: space-between;">
+				<label><input type="radio" name="supervision" value="Very good"> Very good</label>
+				<label><input type="radio" name="supervision" value="Good"> Good</label>
+				<label><input type="radio" name="supervision" value="Regular"> Regular</label>
+				<label><input type="radio" name="supervision" value="Deficient"> Deficient</label>
+			</div>
+		</div>
+
+		<!-- Info Flow -->
+		<div class="rating-section">
+			<h4>4. AGENCY/CLIENT INFO FLOW</h4>
+
+			<div class="rating-grid">
+				<div class="rating-item">
+					<label>Notification of unit changes *</label>
+					<div class="options">
+						<label><input type="radio" name="unitChanges" value="Very good"> Very good</label>
+						<label><input type="radio" name="unitChanges" value="Good"> Good</label>
+						<label><input type="radio" name="unitChanges" value="Regular"> Regular</label>
+						<label><input type="radio" name="unitChanges" value="Deficient"> Deficient</label>
+					</div>
+				</div>
+
+				<div class="rating-item">
+					<label>Look & feel of new agents *</label>
+					<div class="options">
+						<label><input type="radio" name="newAgentsLook" value="Very good"> Very good</label>
+						<label><input type="radio" name="newAgentsLook" value="Good"> Good</label>
+						<label><input type="radio" name="newAgentsLook" value="Regular"> Regular</label>
+						<label><input type="radio" name="newAgentsLook" value="Deficient"> Deficient</label>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Meets Needs -->
+		<div class="meets-needs">
+			<p style="font-weight: 700; color: #13405b; margin-bottom: 10px;">Meets needs & expectations? *</p>
+			<div class="radio-group">
+				<label><input type="radio" name="meetsNeeds" value="Yes"> Yes</label>
+				<label><input type="radio" name="meetsNeeds" value="No"> No</label>
+			</div>
+			<textarea id="whyText" class="why-textarea" placeholder="Why? (Explain your rating)"></textarea>
+		</div>
+
+		<hr>
+
+		<!-- Navigation Buttons -->
+		<div class="nav-buttons">
+			<div class="nav-group">
+			</div>
+			<button type="button" class="eval-btn primary" id="submitBtn"><i class="fa fa-envelope"></i> SUBMIT</button>
+		</div>
 	</div>
+
+	<!-- Flatpickr CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/material_blue.css">
+
+	<!-- Flatpickr JS -->
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+	<script>
+		(function () {
+			// Wait for DOM to be fully loaded
+			if (document.readyState === 'loading') {
+				document.addEventListener('DOMContentLoaded', initForm);
+			} else {
+				initForm();
+			}
+
+			function initForm() {
+				// Initialize Flatpickr for date
+				flatpickr("#visitDate", {
+					dateFormat: "Y-m-d",
+					defaultDate: new Date(),
+					allowInput: false,
+					clickOpens: true,
+					disableMobile: true
+				});
+
+				// Initialize Flatpickr for time
+				flatpickr("#visitTime", {
+					enableTime: true,
+					noCalendar: true,
+					dateFormat: "h:i K",
+					defaultDate: "00:00 AM",
+					time_24hr: false,
+					allowInput: false,
+					clickOpens: true,
+					disableMobile: true
+				});
+
+				const submitBtn = document.getElementById('submitBtn');
+				if (!submitBtn) return;
+
+				function getAllFormData() {
+					const getRadioValue = (name) => {
+						const radios = document.getElementsByName(name);
+						for (let r of radios) {
+							if (r.checked) return r.value;
+						}
+						return 'Not selected';
+					};
+
+					const visitDate = document.getElementById('visitDate')?.value || '0000-00-00';
+					const visitTime = document.getElementById('visitTime')?.value || '00:00 AM';
+					const evaluatedBy = document.getElementById('evaluatedBy')?.value || 'Write Here';
+					const whyText = document.getElementById('whyText')?.value || '';
+
+					const formSummary = `SECURITY SERVICE EVALUATION
+
+						VISIT DETAILS:
+						Date: ${visitDate}
+						Time: ${visitTime}
+						Evaluated by: ${evaluatedBy}
+
+						AGENT PERFORMANCE:
+						- Customer Support: ${getRadioValue('customerSupport')}
+						- Procedural knowledge: ${getRadioValue('procKnowledge')}
+						- Responsibility: ${getRadioValue('responsibility')}
+						- Punctuality: ${getRadioValue('punctuality')}
+
+						SERVICE ASPECTS:
+						- Personnel disposition: ${getRadioValue('personnelDisposition')}
+						- Presence of the agent: ${getRadioValue('agentPresence')}
+						- Presence of the supervisor: ${getRadioValue('supervisorPresence')}
+						- Opening on time: ${getRadioValue('openingOnTime')}
+						- Team on time: ${getRadioValue('teamOnTime')}
+						- Complete uniform: ${getRadioValue('uniform')}
+
+						SUPERVISION:
+						- Provided supervision: ${getRadioValue('supervision')}
+
+						INFO FLOW:
+						- Notification unit changes: ${getRadioValue('unitChanges')}
+						- Look/feel new agents: ${getRadioValue('newAgentsLook')}
+
+						MEETS NEEDS/EXPECTATIONS: ${getRadioValue('meetsNeeds')}
+
+						COMMENTS:
+						${whyText}
+
+						---
+						This evaluation was submitted via the Security Service Control form.`;
+
+					return {
+						subject: `Security Evaluation Report - ${visitDate}`,
+						body: formSummary
+					};
+				}
+
+				submitBtn.addEventListener('click', function (e) {
+					e.preventDefault();
+					const data = getAllFormData();
+
+					// Hardcoded recipient email
+					const recipientEmail = 'fundsroomtech@gmail.com';
+
+					// Open Gmail compose directly with pre-filled data
+					const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${recipientEmail}&su=${encodeURIComponent(data.subject)}&body=${encodeURIComponent(data.body)}`;
+
+					// Open in new tab
+					window.open(gmailUrl, '_blank');
+
+					// Show success message
+					alert('✓ Gmail compose window opened with your evaluation form!\n\nRecipient: ' + recipientEmail);
+				});
+			}
+		})();
+	</script>
 	<!-- Blog Section End -->
 
 	<!-- Footer Section Start -->
