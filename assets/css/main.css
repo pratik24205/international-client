@@ -2780,7 +2780,8 @@ footer {
 
 .footer-social-profile li {
 	display: inline-block;
-	margin-right: 6px;
+	margin-right: 0px;
+	margin-left: 30px;
 }
 
 .footer-social-profile li:last-child {
