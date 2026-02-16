@@ -148,83 +148,125 @@
 					both security compliance and customer support work ethics.</p>
 			</div>
 
-			<!-- Tab Buttons -->
-			<div class="service-tabs">
-				<button class="tab-btn active" data-tab="tab1">Foot Patrol Officers</button>
-				<button class="tab-btn" data-tab="tab2">Armed / Unarmed Officers</button>
-				<button class="tab-btn" data-tab="tab3">Video Surveillance Management</button>
+			<style>
+	/* Ensure row behaves like a card */
+	.tab-content .row {
+		min-height: 380px;
+	}
+
+	/* Remove spacing ONLY for image column */
+	.tab-content .col-lg-6:first-child {
+		padding: 0;
+	}
+
+	/* Image wrapper fills entire column */
+	.service-img-wrapper {
+		width: 100%;
+		height: 100%;
+		min-height: 380px;
+		overflow: hidden;
+		display: flex;
+	}
+
+	/* Image fills edge-to-edge */
+	.service-img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center top; /* important: clean vertical fit */
+		display: block;
+	}
+
+	/* Content side spacing (unchanged look, just cleaner) */
+	.service-content {
+		padding: 40px;
+	}
+
+	.service-content h2 {
+		margin-bottom: 15px;
+		font-weight: 600;
+	}
+
+	.service-content p {
+		line-height: 1.7;
+		margin-bottom: 12px;
+	}
+</style>
+
+
+<!-- Tab Buttons -->
+<div class="service-tabs">
+	<button class="tab-btn active" data-tab="tab1">Foot Patrol Officers</button>
+	<button class="tab-btn" data-tab="tab2">Armed / Unarmed Officers</button>
+	<button class="tab-btn" data-tab="tab3">Video Surveillance Management</button>
+</div>
+
+<!-- Tab Content -->
+<div class="tab-content-wrapper">
+
+	<!-- Tab 1 -->
+	<div class="tab-content active" id="tab1">
+		<div class="row align-items-stretch">
+			<div class="col-lg-6">
+				<div class="service-img-wrapper">
+					<img src="assets/img/servicehomeimg1.jpg" alt="Foot Patrol Officers" class="service-img">
+				</div>
 			</div>
-
-			<!-- Tab Content -->
-			<div class="tab-content-wrapper">
-
-				<!-- Tab 1: Foot Patrol Officers -->
-				<div class="tab-content active" id="tab1">
-					<div class="row align-items-center">
-						<div class="col-lg-6">
-							<div class="service-img-wrapper">
-								<img src="assets/img/servicehomeimg.jpg" alt="Foot Patrol Officers" class="service-img">
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="service-content">
-								<h2>BANK FOOT PATROL OFFICERS</h2>
-								<p>Brentwood offer you armed / unarmed officers patrolling your building and around its
-									perimeter daily at key scheduled times of the day. Our Protection officers transmit
-									the sense of safety among customers, and prevents employee theft.</p>
-								<a href="#" class="service-btn">Contact us for a complimentary evaluation tour</a>
-							</div>
-						</div>
-					</div>
+			<div class="col-lg-6">
+				<div class="service-content">
+					<h2>BANK FOOT PATROL OFFICERS</h2>
+					<p>Brentwood offer you armed / unarmed officers patrolling your building and around its
+						perimeter daily at key scheduled times of the day. Our Protection officers transmit
+						the sense of safety among customers, and prevents employee theft.</p>
+					<a href="contact.html" class="service-btn">Contact us for a more details</a>
 				</div>
-
-				<!-- Tab 2: Armed / Unarmed Officers -->
-				<div class="tab-content" id="tab2">
-					<div class="row align-items-center">
-						<div class="col-lg-6">
-							<div class="service-img-wrapper">
-								<img src="assets/img/servicehomeimg.jpg" alt="Armed Officers" class="service-img">
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="service-content">
-								<h2>ARMED / UNARMED OFFICERS</h2>
-								<p>Our Bank Protection Officers are specifically trained to operate in highly regulated
-									financial environments. We provide disciplined, professional personnel dedicated to
-									protecting banking institutions, employees, and clients while maintaining full
-									compliance with internal security protocols.</p>
-								<p>At our company, we train and motivate our officers to perform at the highest
-									standards. Our operational structure strengthens security compliance while
-									reinforcing professional conduct and customer service ethics within financial
-									institutions.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Tab 3: Video Surveillance Management -->
-				<div class="tab-content" id="tab3">
-					<div class="row align-items-center">
-						<div class="col-lg-6">
-							<div class="service-img-wrapper">
-								<img src="assets/img/servicehomeimg.jpg" alt="Video Surveillance" class="service-img">
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="service-content">
-								<h2>Bank Surveillance and Video Monitoring Management</h2>
-								<p>Brentwood offers you management of your existing video monitoring system. Cameras are
-									not only a theft deterrent, through responsible monitoring our officers can capture
-									footage that can assist authorities investigate an incident.</p>
-								<p>Additionally, if you don't currently have a good surveillance system in place,
-									Brentwood offers you a complete surveillance solution suite that could also capture
-									footage of your teller transactions.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
 			</div>
+		</div>
+	</div>
+
+	<!-- Tab 2 -->
+	<div class="tab-content" id="tab2">
+		<div class="row align-items-stretch">
+			<div class="col-lg-6">
+				<div class="service-img-wrapper">
+					<img src="assets/img/servicehomeimg2.jpg" alt="Armed Officers" class="service-img">
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="service-content">
+					<h2>ARMED / UNARMED OFFICERS</h2>
+					<p>Our Bank Protection Officers are specifically trained to operate in highly regulated
+						financial environments.</p>
+					<p>We train and motivate our officers to perform at the highest standards while
+						maintaining professional conduct.</p>
+					<a href="contact.html" class="service-btn">Contact us for a more details</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Tab 3 -->
+	<div class="tab-content" id="tab3">
+		<div class="row align-items-stretch">
+			<div class="col-lg-6">
+				<div class="service-img-wrapper">
+					<img src="assets/img/servicehomeimg.jpg" alt="Video Surveillance" class="service-img">
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="service-content">
+					<h2>Bank Surveillance and Video Monitoring Management</h2>
+					<p>Brentwood offers you management of your existing video monitoring system.</p>
+					<p>We also provide a complete surveillance solution suite.</p>
+					<a href="contact.html" class="service-btn">Contact us for a more details</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
 
 		</div>
 	</div>
